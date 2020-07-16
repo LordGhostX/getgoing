@@ -18,6 +18,10 @@ func (c Car) Drive() {
   fmt.Println("Driving...")
 }
 
+func (c Car) GetName() string {
+  return c.Name
+}
+
 func main() {
   car1 := Car {"Ford", 10, 10001}
   car2 := Car {
@@ -31,4 +35,6 @@ func main() {
 
   car1.Print()
   car2.Drive()
+
+  fmt.Println(car1.GetName())
 }
