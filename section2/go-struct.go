@@ -1,11 +1,10 @@
 package main
-
 import (
   "fmt"
 )
 
 type Car struct {
-  Name  string
+  Name string
   Age int
   ModelNo int
 }
