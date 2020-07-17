@@ -41,4 +41,11 @@ func main() {
   Anything("Hello World")
   Anything(12.6748)
   Anything(15)
+
+  mymap := make(map[string]interface{})
+  mymap["name"] = "Ghost"
+  mymap["age"] = 18
+  mymap["male"] = true
+
+  fmt.Println(mymap)
 }
