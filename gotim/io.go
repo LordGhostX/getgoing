@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func IO() {
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Print("Enter something: ")
 	scanner.Scan()
