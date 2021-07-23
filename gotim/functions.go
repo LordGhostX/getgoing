@@ -29,7 +29,7 @@ func test2(myFunc func(int) int, x int) {
 	fmt.Println(myFunc(x))
 }
 
-func main() {
+func Functions() {
 	test()
 	printInt(10)
 	printInt(5)
