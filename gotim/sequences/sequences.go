@@ -7,24 +7,24 @@ import (
 
 func calcNextSequence(a, b, c float64, n int, apSeq bool) (float64, error) {
 	if apSeq {
-		if c - b != b - a {
+		if c-b != b-a {
 			return 0, errors.New("not a valid sequence")
 		}
 		r := c - b
-		return a + (float64(n) - 1) * r, nil
+		return a + (float64(n)-1)*r, nil
 	} else {
-		if c / b != b / a {
+		if c/b != b/a {
 			return 0, errors.New("not a valid sequence")
 		}
 		r := c / b
-		return a * math.Pow(r, float64(n) - 1), nil
+		return a * math.Pow(r, float64(n)-1), nil
 	}
 }
 
 func calcNextSequences(a, b, c float64, n int, apSeq bool) ([]float64, error) {
 	seq := make([]float64, n)
 	for i := 0; i < n; i++ {
-		val, err := calcNextSequence(a, b, c, i + 4, apSeq)
+		val, err := calcNextSequence(a, b, c, i+4, apSeq)
 		if err != nil {
 			return nil, err
 		} else {
@@ -36,7 +36,7 @@ func calcNextSequences(a, b, c float64, n int, apSeq bool) ([]float64, error) {
 
 func calcSplitSequences(arr []float64, apSeq bool) ([]float64, error) {
 	var seq []float64
-	for i := 0; i < len(arr); i+=3 {
+	for i := 0; i < len(arr); i += 3 {
 		a, b, c := arr[i], arr[i+1], arr[i+2]
 		d, err := calcNextSequence(a, b, c, 4, apSeq)
 		if err != nil {

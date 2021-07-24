@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 type student struct {
-	name string
+	name   string
 	grades []int
-	age int
+	age    int
 }
 
 func (s student) getAge() int {

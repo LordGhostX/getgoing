@@ -9,7 +9,7 @@ func Arrays() {
 	fmt.Println(arr)
 	fmt.Println(arr[0])
 
-	arr2 := [3]int{1, 2 , 3}
+	arr2 := [3]int{1, 2, 3}
 	fmt.Println(arr2)
 	fmt.Println(len(arr2))
 

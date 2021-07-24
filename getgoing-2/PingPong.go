@@ -24,7 +24,7 @@ func main() {
 
 func pingBall(ping chan int, pong chan int, wg *sync.WaitGroup) {
 	for {
-		<- pong
+		<-pong
 		wg.Done()
 		fmt.Println("Ping Ball")
 		time.Sleep(time.Second)
@@ -34,7 +34,7 @@ func pingBall(ping chan int, pong chan int, wg *sync.WaitGroup) {
 
 func pongBall(ping chan int, pong chan int, wg *sync.WaitGroup) {
 	for {
-		<- ping
+		<-ping
 		wg.Done()
 		fmt.Println("Pong Ball")
 		time.Sleep(time.Second)

@@ -17,6 +17,6 @@ func main() {
 
 	err := http.ListenAndServe("127.0.0.1:3000", mux)
 	if err != nil {
-		return 
+		return
 	}
 }

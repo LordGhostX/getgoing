@@ -7,9 +7,9 @@ import (
 
 func test(c chan int, quits chan struct{}) {
 	select {
-	case <- c:
+	case <-c:
 		fmt.Println("Received")
-	case <- quits:
+	case <-quits:
 		fmt.Println("Quit")
 		// os.Exit(0)
 	}

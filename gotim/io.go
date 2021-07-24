@@ -18,6 +18,6 @@ func IO() {
 	fmt.Scanf("%s", &text)
 	fmt.Printf("You typed %q\n", text)
 
-	fmt.Println(strconv.ParseInt("100",10, 64))
+	fmt.Println(strconv.ParseInt("100", 10, 64))
 	fmt.Println(strconv.Atoi("100"))
 }

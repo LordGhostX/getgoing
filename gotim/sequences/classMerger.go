@@ -2,7 +2,7 @@ package sequences
 
 func mergeClasses(a, b []int) []int {
 	for idB := range b {
-		if b[idB] > a[len(a) - 1] {
+		if b[idB] > a[len(a)-1] {
 			a = append(a, b[idB])
 			continue
 		}

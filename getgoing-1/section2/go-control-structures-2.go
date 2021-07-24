@@ -23,22 +23,22 @@ func main() {
 	switch day {
 	case "Mon":
 		fmt.Println("Today is Monday")
-  case "Tue", "Thur":
-    fmt.Println("Today begins with T")
-  case "Fri", "Sat", "Sun":
-    fmt.Println("Yayyy!!! It's Weekend")
-  default:
-    fmt.Println("Some Other Day Instead")
+	case "Tue", "Thur":
+		fmt.Println("Today begins with T")
+	case "Fri", "Sat", "Sun":
+		fmt.Println("Yayyy!!! It's Weekend")
+	default:
+		fmt.Println("Some Other Day Instead")
 	}
 
 	switch {
 	case day == "Mon":
 		fmt.Println("Today is Monday")
-  case day == "Tue" || day == "Thur":
-    fmt.Println("Today begins with T")
-  case day == "Fri" || day == "Sat" || day == "Sun":
-    fmt.Println("Yayyy!!! It's Weekend")
-  default:
-    fmt.Println("Some Other Day Instead")
+	case day == "Tue" || day == "Thur":
+		fmt.Println("Today begins with T")
+	case day == "Fri" || day == "Sat" || day == "Sun":
+		fmt.Println("Yayyy!!! It's Weekend")
+	default:
+		fmt.Println("Some Other Day Instead")
 	}
 }

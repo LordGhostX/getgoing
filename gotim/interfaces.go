@@ -7,7 +7,7 @@ type shape interface {
 }
 
 type triangle struct {
-	base float64
+	base   float64
 	height float64
 }
 

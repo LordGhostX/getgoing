@@ -18,34 +18,34 @@ type Ford struct {
 }
 
 func (l *Lambo) Drive() {
-  fmt.Println("Lambo on the move")
-  fmt.Println(l.LamboModel)
+	fmt.Println("Lambo on the move")
+	fmt.Println(l.LamboModel)
 }
 
 func (f *Ford) Drive() {
-  fmt.Println("Ford on the move")
-  fmt.Println(f.FordModel)
+	fmt.Println("Ford on the move")
+	fmt.Println(f.FordModel)
 }
 
 func Anything(anything interface{}) {
-  fmt.Println(anything)
+	fmt.Println(anything)
 }
 
 func main() {
 	l := Lambo{"Gallardo"}
-  f := Ford{"Ultra"}
+	f := Ford{"Ultra"}
 
-  l.Drive()
-  f.Drive()
+	l.Drive()
+	f.Drive()
 
-  Anything("Hello World")
-  Anything(12.6748)
-  Anything(15)
+	Anything("Hello World")
+	Anything(12.6748)
+	Anything(15)
 
-  mymap := make(map[string]interface{})
-  mymap["name"] = "Ghost"
-  mymap["age"] = 18
-  mymap["male"] = true
+	mymap := make(map[string]interface{})
+	mymap["name"] = "Ghost"
+	mymap["age"] = 18
+	mymap["male"] = true
 
-  fmt.Println(mymap)
+	fmt.Println(mymap)
 }

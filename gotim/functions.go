@@ -11,7 +11,7 @@ func printInt(x int) {
 }
 
 func add(x, y int) int {
-	return  x + y
+	return x + y
 }
 
 func addSub(x, y int) (int, int) {
@@ -21,7 +21,7 @@ func addSub(x, y int) (int, int) {
 func addSub2(x, y int) (a, b int) {
 	defer fmt.Println("hello!!!")
 
-	a, b = x + y, x - y
+	a, b = x+y, x-y
 	return
 }
 

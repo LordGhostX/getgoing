@@ -49,7 +49,7 @@ func TestCalculateSplitAPSequences(t *testing.T) {
 	if err != nil {
 		t.Fail()
 	}
-	expected := []float64{2, 4, 6, 8,  4, 6, 8, 10,  6, 8, 10, 12,  8, 10, 12, 14}
+	expected := []float64{2, 4, 6, 8, 4, 6, 8, 10, 6, 8, 10, 12, 8, 10, 12, 14}
 	for i := range val {
 		if val[i] != expected[i] {
 			t.Fail()

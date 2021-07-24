@@ -27,7 +27,7 @@ func fibonacci() func() int {
 		if index <= 2 {
 			return index - 1
 		}
-		fib, fib2 = fib2, fib2 + fib
+		fib, fib2 = fib2, fib2+fib
 		return fib2
 	}
 }
@@ -95,7 +95,7 @@ func main() {
 	m["p1"] = Vertex{1, 3}
 	fmt.Println(m["p1"])
 
-	m2 := map[string]Vertex {
+	m2 := map[string]Vertex{
 		"p1": {1, 3},
 		"p2": {10, 3},
 	}

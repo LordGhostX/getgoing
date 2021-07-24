@@ -6,9 +6,9 @@ func Map() {
 	var mp map[string]int
 	fmt.Println(mp)
 
-	var mp2 = map[string]int {
-		"apple": 10,
-		"pear": 5,
+	var mp2 = map[string]int{
+		"apple":  10,
+		"pear":   5,
 		"orange": 7,
 	}
 	fmt.Println(mp2)

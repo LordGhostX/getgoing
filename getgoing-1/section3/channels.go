@@ -1,26 +1,27 @@
 package main
+
 import (
-  "fmt"
+	"fmt"
 )
 
 func main() {
-  var c chan int
-  c2 := make(chan int)
+	var c chan int
+	c2 := make(chan int)
 
-  fmt.Println(c)
-  fmt.Println(c2)
+	fmt.Println(c)
+	fmt.Println(c2)
 
-  go func() {
-    c2 <- 10
-  }()
+	go func() {
+		c2 <- 10
+	}()
 
-  val := <- c2
-  fmt.Println(val)
+	val := <-c2
+	fmt.Println(val)
 
-  go func() {
-    c2 <- 20
-  }()
+	go func() {
+		c2 <- 20
+	}()
 
-  val = <- c2
-  fmt.Println(val)
+	val = <-c2
+	fmt.Println(val)
 }

@@ -15,12 +15,12 @@ func main() {
 
 	for {
 		select {
-		case <- c:
+		case <-c:
 			fmt.Println("Received Message!")
 			go func() {
 				q <- 1
 			}()
-		case <- q:
+		case <-q:
 			fmt.Println("Exiting App!")
 			os.Exit(0)
 		}
